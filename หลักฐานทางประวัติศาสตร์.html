@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หลักฐานทางประวัติศาสตร์ - ชั้น ป.6</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Sarabun', sans-serif;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .bounce {
+            animation: bounce 0.6s ease-in-out;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-blue-100 min-h-full">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-blue-800 mb-2">📚 หลักฐานทางประวัติศาสตร์</h1>
+            <p class="text-xl text-blue-600">สำหรับนักเรียนชั้นประถมศึกษาปีที่ 6</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="flex justify-center mb-8">
+            <div class="bg-white rounded-full shadow-lg p-2">
+                <button onclick="showSection('lesson')" id="lessonBtn" class="px-6 py-3 rounded-full bg-blue-500 text-white font-semibold mx-2 transition-all hover:bg-blue-600">📖 บทเรียน</button>
+                <button onclick="showSection('game')" id="gameBtn" class="px-6 py-3 rounded-full bg-gray-200 text-gray-700 font-semibold mx-2 transition-all hover:bg-blue-100">🎮 เกมตอบคำถาม</button>
+            </div>
+        </nav>
+
+        <!-- Lesson Section -->
+        <div id="lessonSection" class="fade-in">
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+                <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center">🏛️ หลักฐานทางประวัติศาสตร์คืออะไร?</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-blue-50 rounded-xl p-6">
+                        <h3 class="text-xl font-bold text-blue-700 mb-4">📜 ความหมาย</h3>
+                        <p class="text-gray-700 leading-relaxed">หลักฐานทางประวัติศาสตร์ คือ สิ่งที่เหลืออยู่จากอดีต ที่สามารถบอกเล่าเรื่องราวของคนในสมัยก่อนได้ เช่น วิถีชีวิต ความเป็นอยู่ เหตุการณ์สำคัญต่างๆ</p>
+                    </div>
+                    
+                    <div class="bg-blue-50 rounded-xl p-6">
+                        <h3 class="text-xl font-bold text-blue-700 mb-4">🎯 ความสำคัญ</h3>
+                        <p class="text-gray-700 leading-relaxed">ช่วยให้เราเข้าใจอดีต เรียนรู้จากประสบการณ์ของบรรพบุรุษ และนำมาประยุกต์ใช้ในปัจจุบันได้</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold text-blue-800 mb-6 text-center">🗂️ ประเภทของหลักฐานทางประวัติศาสตร์</h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-r from-blue-100 to-blue-200 rounded-xl p-6">
+                        <h4 class="text-xl font-bold text-blue-800 mb-4">📝 หลักฐานที่เป็นลายลักษณ์อักษร</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center"><span class="text-blue-500 mr-2">•</span>จารึกหินสลัก</li>
+                            <li class="flex items-center"><span class="text-blue-500 mr-2">•</span>ใบลาน สมุดไทย</li>
+                            <li class="flex items-center"><span class="text-blue-500 mr-2">•</span>พระราชพงศาวดาร</li>
+                            <li class="flex items-center"><span class="text-blue-500 mr-2">•</span>หนังสือเดินทาง</li>
+                            <li class="flex items-center"><span class="text-blue-500 mr-2">•</span>จดหมาย เอกสารราชการ</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-blue-100 to-blue-200 rounded-xl p-6">
+                        <h4 class="text-xl font-bold text-blue-800 mb-4">🏺 หลักฐานที่ไม่เป็นลายลักษณ์อักษร</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center"><span class="text-blue-500 mr-2">•</span>โบราณสถาน วัด ปราสาท</li>
+                            <li class="flex items-center"><span class="text-blue-500 mr-2">•</span>เครื่องมือเครื่องใช้โบราณ</li>
+                            <li class="flex items-center"><span class="text-blue-500 mr-2">•</span>เครื่องประดับ เหรียญกษาปณ์</li>
+                            <li class="flex items-center"><span class="text-blue-500 mr-2">•</span>ภาพเขียน ภาพแกะสลัก</li>
+                            <li class="flex items-center"><span class="text-blue-500 mr-2">•</span>ประเพณี วัฒนธรรม</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-xl">
+                    <h4 class="text-lg font-bold text-yellow-800 mb-2">💡 รู้หรือไม่?</h4>
+                    <p class="text-yellow-700">หลักฐานทางประวัติศาสตร์ที่สำคัญของไทย เช่น จารึกพ่อขุนรามคำแหงมหาราช ถือเป็นหลักฐานการเกิดขึ้นของอักษรไทยและการปกครองในสมัยสุโขทัย</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Section -->
+        <div id="gameSection" class="hidden">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center">🎮 เกมตอบคำถาม</h2>
+                
+                <div id="gameStart" class="text-center">
+                    <div class="bg-blue-50 rounded-xl p-8 mb-6">
+                        <h3 class="text-2xl font-bold text-blue-700 mb-4">พร้อมทดสอบความรู้แล้วหรือยัง?</h3>
+                        <p class="text-gray-600 mb-6">มีคำถาม 10 ข้อ เกี่ยวกับหลักฐานทางประวัติศาสตร์</p>
+                        <button onclick="startGame()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-8 rounded-full text-xl transition-all transform hover:scale-105">🚀 เริ่มเกม</button>
+                    </div>
+                </div>
+
+                <div id="gamePlay" class="hidden">
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-lg font-semibold text-blue-700">คำถามที่ <span id="currentQ">1</span>/10</span>
+                            <span class="text-lg font-semibold text-green-600">คะแนน: <span id="score">0</span></span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div id="progressBar" class="bg-blue-500 h-3 rounded-full transition-all duration-300" style="width: 10%"></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 rounded-xl p-6 mb-6">
+                        <h3 id="question" class="text-xl font-bold text-blue-800 mb-6"></h3>
+                        <div id="choices" class="space-y-3"></div>
+                    </div>
+
+                    <div id="feedback" class="hidden mb-6 p-4 rounded-xl"></div>
+                </div>
+
+                <div id="gameEnd" class="hidden text-center">
+                    <div class="bg-gradient-to-r from-blue-100 to-green-100 rounded-xl p-8">
+                        <h3 class="text-3xl font-bold text-blue-800 mb-4">🎉 เสร็จสิ้น!</h3>
+                        <p class="text-2xl font-bold text-green-600 mb-4">คะแนนของคุณ: <span id="finalScore">0</span>/10</p>
+                        <p id="scoreMessage" class="text-lg text-gray-700 mb-6"></p>
+                        <button onclick="restartGame()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full transition-all transform hover:scale-105">🔄 เล่นอีกครั้ง</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 py-6 bg-white rounded-xl shadow-lg">
+            <p class="text-gray-600">จัดทำโดย <span class="font-semibold text-blue-700">คุณครูอัญชุรีพร แก้วธารทอง</span></p>
+        </footer>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "หลักฐานทางประวัติศาสตร์คืออะไร?",
+                choices: ["สิ่งที่เหลืออยู่จากอดีต", "หนังสือเรียนประวัติศาสตร์", "เรื่องเล่าจากปู่ย่าตายาย", "ภาพยนตร์เรื่องประวัติศาสตร์"],
+                correct: 0,
+                explanation: "หลักฐานทางประวัติศาสตร์คือสิ่งที่เหลืออยู่จากอดีต ที่สามารถบอกเล่าเรื่องราวของคนในสมัยก่อนได้"
+            },
+            {
+                question: "ข้อใดเป็นหลักฐานที่เขียน?",
+                choices: ["โบราณสถาน", "จารึกหินสลัก", "เครื่องประดับ", "ประเพณีวัฒนธรรม"],
+                correct: 1,
+                explanation: "จารึกหินสลักเป็นหลักฐานที่เขียน เพราะมีตัวอักษรหรือข้อความที่สามารถอ่านได้"
+            },
+            {
+                question: "ข้อใดเป็นหลักฐานที่ไม่เขียน?",
+                choices: ["ใบลาน", "พระราชพงศาวดาร", "ปราสาทหินโบราณ", "จดหมายโบราณ"],
+                correct: 2,
+                explanation: "ปราสาทหินโบราณเป็นหลักฐานที่ไม่เขียน เพราะเป็นสิ่งก่อสร้างที่ไม่มีตัวอักษร"
+            },
+            {
+                question: "จารึกพ่อขุนรามคำแหงมหาราชเป็นหลักฐานของสมัยใด?",
+                choices: ["สมัยอยุธยา", "สมัยสุโขทัย", "สมัยรัตนโกสินทร์", "สมัยทวารวดี"],
+                correct: 1,
+                explanation: "จารึกพ่อขุนรามคำแหงมหาราชเป็นหลักฐานสำคัญของสมัยสุโขทัย"
+            },
+            {
+                question: "ประโยชน์ของการศึกษาหลักฐานทางประวัติศาสตร์คืออะไร?",
+                choices: ["ทำให้เราเก่งภาษาอังกฤษ", "ช่วยให้เราเข้าใจอดีต", "ทำให้เราร่ำรวย", "ช่วยให้เราสูงขึ้น"],
+                correct: 1,
+                explanation: "การศึกษาหลักฐานทางประวัติศาสตร์ช่วยให้เราเข้าใจอดีตและเรียนรู้จากประสบการณ์ของบรรพบุรุษ"
+            },
+            {
+                question: "ข้อใดไม่ใช่หลักฐานทางประวัติศาสตร์?",
+                choices: ["เหรียญกษาปณ์โบราณ", "ภาพเขียนในถ้ำ", "โทรศัพท์มือถือ", "เครื่องมือหินโบราณ"],
+                correct: 2,
+                explanation: "โทรศัพท์มือถือไม่ใช่หลักฐานทางประวัติศาสตร์ เพราะเป็นเทคโนโลยีสมัยใหม่"
+            },
+            {
+                question: "สมุดไทยเป็นหลักฐานประเภทใด?",
+                choices: ["หลักฐานที่เขียน", "หลักฐานที่ไม่เขียน", "หลักฐานที่พูด", "หลักฐานที่ร้อง"],
+                correct: 0,
+                explanation: "สมุดไทยเป็นหลักฐานที่เขียน เพราะมีตัวอักษรและข้อความที่บันทึกไว้"
+            },
+            {
+                question: "ข้อใดเป็นตัวอย่างของประเพณีวัฒนธรรมที่เป็นหลักฐานทางประวัติศาสตร์?",
+                choices: ["การเล่นเกมคอมพิวเตอร์", "การทำบุญตักบาตร", "การดูโทรทัศน์", "การใช้อินเทอร์เน็ต"],
+                correct: 1,
+                explanation: "การทำบุญตักบาตรเป็นประเพณีวัฒนธรรมที่สืบทอดมาจากอดีต จึงเป็นหลักฐานทางประวัติศาสตร์"
+            },
+            {
+                question: "เครื่องมือหินโบราณบอกให้เราทราบเรื่องอะไร?",
+                choices: ["วิธีการทำอาหารในปัจจุบัน", "วิถีชีวิตของมนุษย์ยุคหิน", "การใช้เทคโนโลยี", "การเดินทางไปต่างประเทศ"],
+                correct: 1,
+                explanation: "เครื่องมือหินโบราณบอกให้เราทราบเกี่ยวกับวิถีชีวิตของมนุษย์ยุคหิน"
+            },
+            {
+                question: "การอนุรักษ์หลักฐานทางประวัติศาสตร์มีความสำคัญอย่างไร?",
+                choices: ["ทำให้สวยงาม", "เพื่อให้คนรุ่นหลังได้เรียนรู้", "เพื่อขายหาเงิน", "เพื่อโชว์ความรู้"],
+                correct: 1,
+                explanation: "การอนุรักษ์หลักฐานทางประวัติศาสตร์มีความสำคัญเพื่อให้คนรุ่นหลังได้เรียนรู้และเข้าใจอดีต"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+        let gameActive = false;
+
+        function showSection(section) {
+            document.getElementById('lessonSection').classList.add('hidden');
+            document.getElementById('gameSection').classList.add('hidden');
+            
+            document.getElementById('lessonBtn').className = 'px-6 py-3 rounded-full bg-gray-200 text-gray-700 font-semibold mx-2 transition-all hover:bg-blue-100';
+            document.getElementById('gameBtn').className = 'px-6 py-3 rounded-full bg-gray-200 text-gray-700 font-semibold mx-2 transition-all hover:bg-blue-100';
+            
+            if (section === 'lesson') {
+                document.getElementById('lessonSection').classList.remove('hidden');
+                document.getElementById('lessonBtn').className = 'px-6 py-3 rounded-full bg-blue-500 text-white font-semibold mx-2 transition-all hover:bg-blue-600';
+            } else {
+                document.getElementById('gameSection').classList.remove('hidden');
+                document.getElementById('gameBtn').className = 'px-6 py-3 rounded-full bg-blue-500 text-white font-semibold mx-2 transition-all hover:bg-blue-600';
+            }
+        }
+
+        function startGame() {
+            currentQuestion = 0;
+            score = 0;
+            gameActive = true;
+            
+            document.getElementById('gameStart').classList.add('hidden');
+            document.getElementById('gamePlay').classList.remove('hidden');
+            document.getElementById('gameEnd').classList.add('hidden');
+            
+            showQuestion();
+        }
+
+        function showQuestion() {
+            const q = questions[currentQuestion];
+            document.getElementById('currentQ').textContent = currentQuestion + 1;
+            document.getElementById('score').textContent = score;
+            document.getElementById('question').textContent = q.question;
+            document.getElementById('progressBar').style.width = ((currentQuestion + 1) / 10 * 100) + '%';
+            
+            const choicesDiv = document.getElementById('choices');
+            choicesDiv.innerHTML = '';
+            
+            q.choices.forEach((choice, index) => {
+                const button = document.createElement('button');
+                button.className = 'w-full text-left p-4 bg-white border-2 border-blue-200 rounded-lg hover:border-blue-400 hover:bg-blue-50 transition-all';
+                button.textContent = `${index + 1}. ${choice}`;
+                button.onclick = () => selectAnswer(index);
+                choicesDiv.appendChild(button);
+            });
+            
+            document.getElementById('feedback').classList.add('hidden');
+        }
+
+        function selectAnswer(selected) {
+            if (!gameActive) return;
+            
+            const q = questions[currentQuestion];
+            const isCorrect = selected === q.correct;
+            
+            if (isCorrect) {
+                score++;
+            }
+            
+            // Show feedback
+            const feedback = document.getElementById('feedback');
+            feedback.className = `mb-6 p-4 rounded-xl ${isCorrect ? 'bg-green-100 border-green-400' : 'bg-red-100 border-red-400'} border-2`;
+            feedback.innerHTML = `
+                <div class="flex items-center mb-2">
+                    <span class="text-2xl mr-2">${isCorrect ? '✅' : '❌'}</span>
+                    <span class="font-bold ${isCorrect ? 'text-green-700' : 'text-red-700'}">${isCorrect ? 'ถูกต้อง!' : 'ไม่ถูกต้อง'}</span>
+                </div>
+                <p class="text-gray-700">${q.explanation}</p>
+            `;
+            feedback.classList.remove('hidden');
+            
+            // Disable all buttons
+            const buttons = document.querySelectorAll('#choices button');
+            buttons.forEach((btn, index) => {
+                btn.disabled = true;
+                if (index === q.correct) {
+                    btn.classList.add('bg-green-200', 'border-green-400');
+                } else if (index === selected && !isCorrect) {
+                    btn.classList.add('bg-red-200', 'border-red-400');
+                }
+            });
+            
+            // Show next button or end game
+            setTimeout(() => {
+                currentQuestion++;
+                if (currentQuestion < questions.length) {
+                    showQuestion();
+                } else {
+                    endGame();
+                }
+            }, 2000);
+        }
+
+        function endGame() {
+            gameActive = false;
+            document.getElementById('gamePlay').classList.add('hidden');
+            document.getElementById('gameEnd').classList.remove('hidden');
+            document.getElementById('finalScore').textContent = score;
+            
+            let message = '';
+            if (score >= 9) {
+                message = '🌟 ยอดเยี่ยม! คุณเข้าใจเรื่องหลักฐานทางประวัติศาสตร์เป็นอย่างดี';
+            } else if (score >= 7) {
+                message = '👍 ดีมาก! คุณมีความรู้ดีเกี่ยวกับหลักฐานทางประวัติศาสตร์';
+            } else if (score >= 5) {
+                message = '😊 ดี! ลองอ่านบทเรียนอีกครั้งแล้วมาทำแบบทดสอบใหม่นะ';
+            } else {
+                message = '💪 ไม่เป็นไร! ลองศึกษาบทเรียนเพิ่มเติมแล้วมาลองใหม่';
+            }
+            
+            document.getElementById('scoreMessage').textContent = message;
+        }
+
+        function restartGame() {
+            document.getElementById('gameEnd').classList.add('hidden');
+            document.getElementById('gameStart').classList.remove('hidden');
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98b276bff2857335',t:'MTc1OTg5MzIyMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
